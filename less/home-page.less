@@ -1,17 +1,37 @@
 header {
   height: 15vh;
   border-bottom: @navigation-border dashed;
-
-  .nav {
-    .flexit(row, space-between, center);
-    color:@font-color;
-  } //closes nav style
+  
 
 } //closes header style
 
+.hero {
+  width: 100%
+  margin: 5%;
+  padding-left: 10%;
 
+  .hero-image {
+    width:95%;
+    margin-right: 10%;
+    padding-right: 5%;
+  } //this closes /hero-image
 
+  .hero-text {
+    width: 90%;
+    margin: 18px;
+    padding-right: 3%;
 
+    h2 {
+  font-size: 3.6rem;
+  } //this closes h2
+
+    p {
+      font-size: 1.6rem;
+      font-family: @main-font;
+      font-weight: bold;
+    } // this closes p
+  }//this closes .hero-text
+} //this closes .hero
 
 
 

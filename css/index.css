@@ -143,6 +143,10 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
 }
+body {
+  margin: 5%;
+  padding: 5%;
+}
 h1,
 h2,
 h3,
@@ -175,6 +179,25 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.links a {
+  text-decoration: none;
+  color: #212529;
+  font-size: 2rem;
+  font-weight: bold;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -190,12 +213,28 @@ header {
   height: 15vh;
   border-bottom: #C0C0C0 dashed;
 }
-header .nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: #212529;
+.hero {
+  width: 100%
+  margin: 5%;
+  padding-left: 10%;
+}
+.hero .hero-image {
+  width: 95%;
+  margin-right: 10%;
+  padding-right: 5%;
+}
+.hero .hero-text {
+  width: 90%;
+  margin: 18px;
+  padding-right: 3%;
+}
+.hero .hero-text h2 {
+  font-size: 3.6rem;
+}
+.hero .hero-text p {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
 }
 .home .content-section {
   margin: 30px 0;
