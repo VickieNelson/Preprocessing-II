@@ -2,11 +2,26 @@
 nav {
     .flexit(@direction:row, @justify: space-between, @align:center);
 
-  } //closes nav style
+    @media @mobile {
+    
+        .flexit(column, center, center);
+    }
+    }  
+
+
+//closes nav style
 
   .links {
-    width: 50%;
+    width: 100%;
     .flexit(@direction:row, @justify: space-evenly, @align:center);
+
+    @media @mobile {
+    
+        margin-bottom: 36px;
+
+        .flexit(row, space-between, center);
+    }
+
     a {
       text-decoration: none;
       color:@font-color;
