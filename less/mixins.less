@@ -1,1 +1,17 @@
 // Mixins in here
+.flexit(@direction, @justify, @align){
+display:flex;
+flex-direction: @direction;
+justify-content: @justify;
+align-items: @align;
+}
+
+.body-font(){
+    line-height: 1.5;
+    font-family: @main-font;
+}
+
+.heading-font(){
+    line-height: 1.5;
+    font-family: @heading-font;
+}

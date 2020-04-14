@@ -129,6 +129,13 @@ table {
 * {
   box-sizing: border-box;
 }
+*:before,
+*:afer {
+  box-sizing: inherit;
+}
+* {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%;
 }
@@ -178,6 +185,15 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home header {
+  height: 90vh;
+}
+.home header .nav {
+  color: #212529;
+}
+.home header a {
+  color: #212529;
 }
 .home .content-section {
   margin: 30px 0;
