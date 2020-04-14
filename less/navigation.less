@@ -1,1 +1,34 @@
 // Navigation Styles here
+nav {
+    .flexit(@direction:row, @justify: space-between, @align:center);
+
+    @media @mobile {
+    
+        .flexit(column, center, center);
+    }
+    }  
+
+
+//closes nav style
+
+  .links {
+    width: 100%;
+    .flexit(@direction:row, @justify: space-evenly, @align:center);
+
+    @media @mobile {
+    
+        margin-bottom: 36px;
+
+        .flexit(row, space-between, center);
+    }
+
+    a {
+      text-decoration: none;
+      color:@font-color;
+      font-size: 2.0rem;
+      font-weight: bold;
+  
+    } // closes <a>
+  
+  } //closes .links
+  
